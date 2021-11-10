@@ -346,7 +346,7 @@ ul li{
    color: #212738;            
    box-shadow: 0 0 20px #212738;
    border-radius: 10px;
-   display: block;
+   display: none;
  }
 
  .btn-grad:hover {
