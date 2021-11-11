@@ -1,6 +1,6 @@
 var indexValue = 0;
       function slideShow(){
-        setTimeout(slideShow, 2500);
+        setTimeout(slideShow, 7000);
         var x;
         const img = document.getElementsByClassName("slider");
         for(x = 0; x < img.length; x++){

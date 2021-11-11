@@ -3,7 +3,7 @@
 }
 #text{
     color: #212738;
-    font-size: large;
+    font-size: 1vw;
     text-align: justify;
     margin-right: 15px;
     margin-left: 15px;
@@ -49,13 +49,13 @@
 ul li::marker{
     content: "🏅";
     color: #212738;
-    font-size: xx-large;
+    font-size: 1.5vw;
 }
 ul li{
     margin-left: 7%;
 }
 .Backimage img{
-    width: 150%;
+    width: 90%;
     height: 90%;
     object-fit: contain;
 }
@@ -72,7 +72,7 @@ ul li{
 }
 #title{
     color: black;
-    font-size: 88px;
+    font-size: 7vw;
     text-align: center;
     margin-top: 10px;
     padding: 0 0 0 0;
@@ -80,7 +80,7 @@ ul li{
 }
 #subtitle{
     color: white;
-    font-size: 35px;
+    font-size: 2vw;
     text-align: left;
     margin-left: 10px;
     margin-top: 45px;
@@ -102,7 +102,7 @@ ul li{
 }
 #title_data{
     color: black;
-    font-size: 88px;
+    font-size: 7vw;
     text-align: right;
     margin-top: 10px;
     padding: 0 0 0 0;
@@ -180,7 +180,7 @@ ul li{
 }
 #info_text #text{
     color: #171B27;
-    font-size: large;
+    font-size: 1vw;
     text-align: center;
     margin-right: 15px;
     margin-left: 15px;
@@ -198,7 +198,7 @@ ul li{
     
 }
 #subtitle_2{
-    font-size: 170%;
+    font-size: 2.75vw;
     color:#2D354D ;
     font-family: 'Fredoka One', cursive;
 }
@@ -235,7 +235,7 @@ ul li{
     background-color: #229DBF;
 }
 #title_2{
-    font-size: 80px;
+    font-size: 3.5vw;
     color: white;
     margin-top: 1%;
     margin-left: 3%;
@@ -251,7 +251,7 @@ ul li{
 }
 #subtitle_3{
     color: white;
-    font-size: xx-large;
+    font-size: 2vw;
     text-align: left;
     margin-left: 5%;
     margin-top: 2%;
@@ -260,7 +260,7 @@ ul li{
 }
 #text_info{
     color: #212738;
-    font-size: large;
+    font-size: 1vw;
     text-align: left;
     margin-left: 6%;
     font-family: 'Varela Round', sans-serif;
