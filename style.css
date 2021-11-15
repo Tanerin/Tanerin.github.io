@@ -72,20 +72,20 @@ ul li{
 }
 #title{
     color: black;
-    font-size: 7vw;
+    font-size: 6.35vw;
     text-align: center;
     margin-top: 10px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 #subtitle{
     color: white;
-    font-size: 2vw;
+    font-size: 1.45vw;
     text-align: left;
     margin-left: 10px;
     margin-top: 45px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 
 .Datapage{
@@ -102,11 +102,11 @@ ul li{
 }
 #title_data{
     color: black;
-    font-size: 6.5vw;
+    font-size: 6.35vw;
     text-align: right;
     margin-top: 10px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
     grid-column: 2;
 }
 #logo_data{
@@ -198,9 +198,9 @@ ul li{
     
 }
 #subtitle_2{
-    font-size: 2.75vw;
+    font-size: 2.45vw;
     color:#2D354D ;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 .Donationpage{
     width: 100%;
@@ -235,28 +235,28 @@ ul li{
     background-color: #229DBF;
 }
 #title_2{
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     color: white;
     margin-top: 1%;
     margin-left: 3%;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 #donaciones{
     grid-column: 2;
     grid-row: 2;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Varela Round', sans-serif;
     border-radius: 10px;
     width: 100%;
     height: 100%;
 }
 #subtitle_3{
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 5%;
     margin-top: 2%;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 #text_info{
     color: #212738;
@@ -354,5 +354,10 @@ ul li{
    color: #fff;
    text-decoration: none;
  }
-
-
+ #slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+#slider.fadeOut {
+    opacity:0;
+}
