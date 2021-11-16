@@ -334,8 +334,8 @@ ul li{
     width: 20%;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #F97068 0%, #57C4E5  51%, #F97068  100%)}
-.btn-grad {
+#btn-grad {background-image: linear-gradient(to right, #F97068 0%, #57C4E5  51%, #F97068  100%)}
+#btn-grad {
     grid-column: 2;
     grid-row: 2;
     font-family: 'Fredoka One', cursive;
@@ -351,7 +351,7 @@ ul li{
    border-radius: 10px;
  }
 
- .btn-grad:hover {
+ #btn-grad:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
@@ -367,4 +367,7 @@ ul li{
 }
 #slider.fadeOut {
     opacity:0;
+}
+#donaciones{
+    text-align: center;
 }

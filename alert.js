@@ -1,3 +1,4 @@
 function run_alert(){
-    alert("Hola");
-}
+    document.getElementById("btn-grad").style.display = "none";
+    document.getElementById("donaciones").style.display = "block";
+}   
