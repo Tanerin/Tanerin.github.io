@@ -425,3 +425,8 @@ ul li{
     font-style: bold;
     font-size: 1.01vw;
 }
+.modal-content hr{
+    color: #212738;
+    border: 5px solid #212738;
+    border-radius: 5px;
+}
