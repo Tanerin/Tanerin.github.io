@@ -193,6 +193,7 @@ ul li{
 #info_text #text b{
     color: #F7453B;
     font-style: bold;
+    font-family: 'Fredoka One', cursive;
 }
 
 #Subtitle_2{
@@ -386,7 +387,7 @@ ul li{
     background-color: #6AB547;
     margin: auto;
     padding: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid black;
     border-top: 10px solid #57C4E5;
     width: 60%;
 }
