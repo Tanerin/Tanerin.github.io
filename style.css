@@ -349,7 +349,6 @@ ul li{
    color: #212738;            
    box-shadow: 0 0 20px #212738;
    border-radius: 10px;
-   display: none;
  }
 
  .btn-grad:hover {
@@ -357,10 +356,14 @@ ul li{
    color: #fff;
    text-decoration: none;
  }
-.slider {
-    opacity:0.8;
+#slider {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    border-radius: 5%;
+    opacity: 0.9;
+    opacity:1;
     transition: opacity 1s; 
-    border-radius: 50%;
 }
 #slider.fadeOut {
     opacity:0;
