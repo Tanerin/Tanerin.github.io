@@ -42,8 +42,9 @@
     grid-column: 1;
     display: flex;
     width: 100%;
-    height: 100%;   
-    justify-content:center;
+    height: 90%;   
+    justify-content: center;
+    align-items: center;
     border-right: #212738 3px solid;
 }
 ul li::marker{
@@ -58,6 +59,8 @@ ul li{
     width: 90%;
     height: 90%;
     object-fit: contain;
+    border-radius: 5%;
+    opacity: 0.9;
 }
 .Side_bar{
     background-color: #6AB547;
@@ -72,20 +75,20 @@ ul li{
 }
 #title{
     color: black;
-    font-size: 7vw;
+    font-size: 6.35vw;
     text-align: center;
     margin-top: 10px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 #subtitle{
     color: white;
-    font-size: 2vw;
+    font-size: 1.45vw;
     text-align: left;
     margin-left: 10px;
     margin-top: 45px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 
 .Datapage{
@@ -102,11 +105,12 @@ ul li{
 }
 #title_data{
     color: black;
-    font-size: 6.5vw;
+    font-size: 6.35vw;
     text-align: right;
     margin-top: 10px;
+    margin-right: 15px;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
     grid-column: 2;
 }
 #logo_data{
@@ -190,6 +194,7 @@ ul li{
 #info_text #text b{
     color: #F7453B;
     font-style: bold;
+    font-family: 'Fredoka One', cursive;
 }
 
 #Subtitle_2{
@@ -198,9 +203,9 @@ ul li{
     
 }
 #subtitle_2{
-    font-size: 2.75vw;
+    font-size: 2.45vw;
     color:#2D354D ;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 .Donationpage{
     width: 100%;
@@ -235,28 +240,28 @@ ul li{
     background-color: #229DBF;
 }
 #title_2{
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     color: white;
     margin-top: 1%;
     margin-left: 3%;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
 }
 #donaciones{
     grid-column: 2;
     grid-row: 2;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Varela Round', sans-serif;
     border-radius: 10px;
     width: 100%;
     height: 100%;
 }
 #subtitle_3{
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 5%;
     margin-top: 2%;
     padding: 0 0 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 #text_info{
     color: #212738;
@@ -331,8 +336,8 @@ ul li{
     width: 20%;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #F97068 0%, #57C4E5  51%, #F97068  100%)}
-.btn-grad {
+#btn-grad {background-image: linear-gradient(to right, #F97068 0%, #57C4E5  51%, #F97068  100%)}
+#btn-grad {
     grid-column: 2;
     grid-row: 2;
     font-family: 'Fredoka One', cursive;
@@ -346,13 +351,85 @@ ul li{
    color: #212738;            
    box-shadow: 0 0 20px #212738;
    border-radius: 10px;
-   display: none;
  }
 
- .btn-grad:hover {
+ #btn-grad:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
  }
+#slider {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    border-radius: 5%;
+    opacity: 0.9;
+    opacity:1;
+    transition: opacity 1s; 
+}
+#slider.fadeOut {
+    opacity:0;
+}
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
 
+.modalContainer .modal-content {
+    background-color: #6AB547;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 10px solid black;
+    width: 60%;
+}
 
+.modalContainer .close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #F97068;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h2{
+    font-size: 2.5vw;
+    color: white;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-family: 'Pacifico', cursive;
+}
+.modal-content p{
+    color: #212738;
+    font-size: 1.19vw;
+    text-align: center;
+    margin-left: 6%;
+    font-family: 'Varela Round', sans-serif;
+}
+.modal-content p b{
+    color: beige;
+    font-style: bold;
+    font-size: 1.2vw;
+}
+.modal-content #subtitle{
+    font-size: 2.5vw;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-family: 'Pacifico', cursive;
+}

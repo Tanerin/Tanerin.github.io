@@ -1,13 +1,26 @@
-var indexValue = 0;
-      function slideShow(){
-        setTimeout(slideShow, 7000);
-        var x;
-        const img = document.getElementsByClassName("slider");
-        for(x = 0; x < img.length; x++){
-          img[x].style.display = "none";
-        }
-        indexValue++;
-        if(indexValue > img.length){indexValue = 1}
-        img[indexValue -1].style.display = "block";
-      }
-      slideShow();
+
+var imgArray = [
+  'assets/Slider/IMG_9145.JPG',
+  'assets/Slider/IMG_9164.JPG',
+  'assets/Slider/IMG_9191.JPG',
+  'assets/Slider/IMG_9208.JPG',
+  'assets/Slider/IMG_9209.JPG',
+  'assets/Slider/IMG_9210.JPG',
+  'assets/Slider/IMG_9225.JPG',
+  'assets/Slider/IMG_9226.JPG',
+  'assets/Slider/IMG_9238.JPG',
+  'assets/Slider/IMG_9239.JPG'],
+  curIndex = 0;
+  imgDuration = 7000;
+
+slideShow();
+function slideShow() {
+  document.getElementById('slider').className += "fadeOut";
+  setTimeout(function() {
+      document.getElementById('slider').src = imgArray[curIndex];
+      document.getElementById('slider').className = "";
+  },1000);
+  curIndex++;
+  if (curIndex == imgArray.length) { curIndex = 0; }
+  setTimeout(slideShow, imgDuration);
+}
